@@ -1,0 +1,314 @@
+class DesktopView extends StatefulWidget {
+  const DesktopView({Key? key}) : super(key: key);
+
+  @override
+  State<DesktopView> createState() => _DesktopViewState();
+}
+
+class _DesktopViewState extends State<DesktopView> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+        Container(
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      child: Image.asset("assets/home-image.png"),
+                      width: 500,
+                      height: 500,
+                    )
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    SizedBox(
+                      width: double.infinity,
+                      child: Text(
+                        "We are the top software company",
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 30.0,
+                          letterSpacing: 2.0,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Padding(
+                      padding:  EdgeInsets.only(left: 8.0),
+                      child: SizedBox(
+                        width: double.infinity,
+                        child: Text(
+                          "We thrive about company products which are best in quality. \n We thrive about company products which are best in quality.",
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            color: Colors.grey.shade500,
+                            fontSize: 15.0,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Padding(
+                        padding:  EdgeInsets.all(8.0),
+                        child: SizedBox(
+                          width: 150,
+                          height: 40,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            child: Text(
+                              "Click me",
+                              //style: TextStyle(fontSize: 25),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+        Padding(
+          padding:  EdgeInsets.all(100.0),
+          child: Container(
+            //color: Colors.white.withOpacity(0.5),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              color: Colors.white.withOpacity(0.1),
+            ),
+            child: Column(
+              children: <Widget>[
+                Padding(
+                  padding:  EdgeInsets.only(top: 15.0),
+                  child: Text(
+                    "Our Things",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  child: Padding(
+                    padding:  EdgeInsets.all(20.0),
+                    child: Row(
+                      children: <Widget>[
+                        Expanded(
+                          child: Padding(
+                            padding:  EdgeInsets.all(12.0),
+                            child: Card(
+                              color: Colors.white.withOpacity(0.3),
+                              shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  color: Colors.transparent,
+                                ),
+                                borderRadius:  BorderRadius.all(
+                                    Radius.circular(15)),
+                              ),
+                              child: SizedBox(
+                                width: 50,
+                                height: 200,
+                                child:
+                                Center(child: Text('Elevated Card')),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding:  EdgeInsets.all(12.0),
+                            child: Card(
+                              color: Colors.white.withOpacity(0.3),
+                              shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  color: Colors.transparent,
+                                ),
+                                borderRadius:  BorderRadius.all(
+                                    Radius.circular(15)),
+                              ),
+                              child: SizedBox(
+                                width: 50,
+                                height: 200,
+                                child:
+                                Center(child: Text('Elevated Card')),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding:  EdgeInsets.all(12.0),
+                            child: Card(
+                              color: Colors.white.withOpacity(0.3),
+                              shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  color: Colors.transparent,
+                                ),
+                                borderRadius:  BorderRadius.all(
+                                    Radius.circular(15)),
+                              ),
+                              child: SizedBox(
+                                width: 50,
+                                height: 200,
+                                child:
+                                Center(child: Text('Elevated Card')),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding:  EdgeInsets.all(12.0),
+                            child: Card(
+                              color: Colors.white.withOpacity(0.3),
+                              shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  color: Colors.transparent,
+                                ),
+                                borderRadius:  BorderRadius.all(
+                                    Radius.circular(15)),
+                              ),
+                              child: SizedBox(
+                                width: 50,
+                                height: 200,
+                                child:
+                                Center(child: Text('Elevated Card')),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        Container(
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      child: Image.asset("assets/home-image.png"),
+                      width: 500,
+                      height: 500,
+                    )
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    SizedBox(
+                      width: double.infinity,
+                      child: Text(
+                        "Subscribe",
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 30.0,
+                          letterSpacing: 2.0,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Padding(
+                      padding:  EdgeInsets.only(left: 8.0),
+                      child: SizedBox(
+                        width: double.infinity,
+                        child: Form(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              TextFormField(
+                                decoration: InputDecoration(
+                                  hintText: 'Enter your email',
+                                ),
+                                validator: (String? value) {
+                                  if (value == null || value.isEmpty) {
+                                    return 'Please enter some text';
+                                  }
+                                  return null;
+                                },
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(
+                                    vertical: 16.0),
+                                child: ElevatedButton(
+                                  onPressed: () {
+                                    // Validate will return true if the form is valid, or false if
+                                    // the form is invalid.
+                                  },
+                                  child:  Text('Submit'),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
